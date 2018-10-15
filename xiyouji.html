@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>西游记</title>
+	<link rel="stylesheet" href="./css/common.css">
+	<style>
+		html,body{
+			height: 100%;
+		}
+		div.bg{
+			height: 768px;
+			width: 100%;
+        	background-image: url(./xyj/bg.jpg);
+		    animation: beijing 40s linear infinite;
+}
+@keyframes beijing{
+	100%{
+		background-position: 1920px 0;
+	}
+}
+       .bj,.wk{
+       	width:200px;
+       	height: 180px; 
+       	float: left;
+       	margin-top: 350px;
+       }
+       .wk {
+       	margin-left:300px;
+       	background-image: url(./xyj/wk.png);
+       	animation: wk 1s steps(8) infinite;
+       }
+        @keyframes wk {
+	100%{
+		background-position: -1600px 0;
+	}
+}
+       .bj{
+       	margin-left:50px;
+       	background-image: url(./xyj/bj.png);
+       	animation: bj 1s steps(8) infinite;
+       }
+       @keyframes bj{
+	100%{
+		background-position: -1600px 0;
+	} 
+	} 
+	.ts{
+       margin-top: 360px;
+       margin-left: 50px;
+       width: 170px;
+       height: 240px;
+       float: left;
+       background-image: url(./xyj/ts.png);
+       animation: ts 1s steps(8) infinite;
+	}
+	@keyframes ts{
+		100%{
+			background-position: -1360px;
+		}
+	}
+	.ss{
+		width: 210px;
+		height: 200px;
+		margin-top:350px;
+		margin-left: 50px;
+		float: left;
+		background-image: url(./xyj/ss.png); 
+		animation: ss 1s steps(8) infinite;
+	}
+	@keyframes ss{
+		100%{
+			background-position: -1680px;
+		}
+	}
+	.bg::after{
+		content: "";
+		display: block;
+		clear: both;
+	}
+ 
+	</style>
+</head>
+<body> <div class="bg">
+			<div class="wk"></div>
+			<div class="bj"></div>
+			<div class="ts"></div>
+			<div class="ss"></div>
+	</div>
+	<audio loop src="./music/敢问路在何方.mp3" autoplay="" preload=""></audio>
+
+</body>
+</html>
